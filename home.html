@@ -1,0 +1,18 @@
+<h1>Web Control Notice Board </h1>
+</div>
+
+<div data-role = "content">
+  <html>
+    <body bgcolor = "pink">
+       <form method = "post" action = "change">
+          Notice Message : <input type = "text" name = "lcd" id = "lcd" />
+          <br/>
+          <br/>
+          <input type = "submit" value = "Submit" />
+        </form>
+
+{% if value %}
+<p>Notice Submitted Successfully: {{ value }}</p>
+{% endif %}
+
+</div>
